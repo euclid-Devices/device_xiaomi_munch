@@ -105,8 +105,6 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        mSwitchBar.setChecked(isChecked);
-
         if (mDiracUtils == null) return;
         mDiracUtils.setEnabled(isChecked);
         mHifi.setEnabled(isChecked);
