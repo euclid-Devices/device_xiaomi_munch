@@ -8,39 +8,25 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common euclid stuff.
+$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-PRODUCT_NAME := lineage_munch
+PRODUCT_NAME := euclid_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22021211RC
 
-# EPPE
-TARGET_DISABLE_EPPE := true
-
 # BLUR
 TARGET_ENABLE_BLUR := true
 
-# AXION
-AXION_CAMERA_REAR_INFO := 64,8,2
-AXION_CAMERA_FRONT_INFO := 20
-AXION_MAINTAINER := SENX|センクス
-AXION_PROCESSOR := Snapdragon®_870_5G
-PERF_GOV_SUPPORTED := true
-PERF_ANIM_OVERRIDE := true
-PERF_DEFAULT_GOV := schedutil
-TORCH_STR_SUPPORTED := true
-BYPASS_CHARGE_SUPPORTED := true
-TARGET_TOUCH_BOOST_SUPPORTED := true
-
-
-# LOS PREBUILTS
-TARGET_INCLUDES_LOS_PREBUILTS := true
+# euclidOS
+EUCLID_MAINTAINER := Mrick343
+EUCLID_PROCESSOR := Snapdragon®_870_5G
+EUCLID_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
