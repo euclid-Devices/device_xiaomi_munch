@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/euclid_munch.mk
+    $(LOCAL_DIR)/lineage_munch.mk
 

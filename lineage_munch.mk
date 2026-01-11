@@ -8,22 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common euclid stuff.
-$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-PRODUCT_NAME := euclid_munch
+PRODUCT_NAME := lineage_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Poco
 PRODUCT_MODEL := 22021211RG
 
-EUCLID_BUILD_TYPE := OFFICIAL
-EUCLID_MAINTAINER := Mrick343
-EUCLID_DEVICE := POCO_F4_5G
-EUCLID_PROCESSOR := Snapdragon_865_5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
